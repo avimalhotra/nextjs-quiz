@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "question": "What does JSON stand for?",
+    "type": "multiple_choice",
+    "options": [
+      "JavaScript Object Naming",
+      "JavaScript Object Notation",
+      "Java Simple Object Notation",
+      "JavaScript Oriented Notation"
+    ],
+    "answer": "JavaScript Object Notation"
+  },
+  {
+    "id": 2,
+    "question": "Which JavaScript method converts a JavaScript object into a JSON string?",
+    "type": "multiple_choice",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.stringify()",
+      "JSON.toString()"
+    ],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "id": 3,
+    "question": "Which data type is NOT supported in JSON?",
+    "type": "multiple_choice",
+    "options": [
+      "String",
+      "Number",
+      "Function",
+      "Boolean"
+    ],
+    "answer": "Function"
+  },
+  {
+    "id": 4,
+    "question": "Can you use comments inside a standard JSON file?",
+    "type": "true_false",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 5,
+    "question": "What is the correct file extension for a JSON file?",
+    "type": "multiple_choice",
+    "options": [
+      ".js",
+      ".xml",
+      ".txt",
+      ".json"
+    ],
+    "answer": ".json"
+  },
+  {
+    "id": 6,
+    "question": "How do you parse a JSON string into a JavaScript object in JavaScript?",
+    "type": "multiple_choice",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "id": 7,
+    "question": "Are JSON keys case-sensitive?",
+    "type": "true_false",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  }
+]
