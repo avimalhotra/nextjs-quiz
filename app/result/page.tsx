@@ -1,26 +1,18 @@
 "use client"
 
-
-import { useSearchParams } from 'next/navigation'
-
+import { Suspense } from 'react';
+import ResultPage from './resultContent';
 
 export default function Result(){
-     // const { searchParams } = await new URL(request.url);
-     // const score = searchParams.get('score');
-     
-     // const search = location.search;
-     //  const params = new URLSearchParams(search);
-     // const score=params.get('score'); 
 
-     const searchParams = useSearchParams();
-     const score = searchParams.get('score');
-
-     console.log(score);
+     // const searchParams = useSearchParams();
+     // const score = searchParams.get('score') || "";
 
      return (
           <div className="container mx-auto p-3">
-               <h1 className="text-4xl font-bold">Result</h1>
-               <p className="my-3">Score: {score}</p>
+               <Suspense fallback="Loading">
+                    <ResultPage />
+               </Suspense>
           </div>
      )
 }

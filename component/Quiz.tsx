@@ -8,8 +8,7 @@ export default function Quiz(){
     const [score,setScore] = useState(0);
     const [current,setCurrent] = useState(0);
     
-    function checkAnswer(elem){
-          // if( elem.value===elem.getAttribute('data-ans') ){ setScore(prevScore => prevScore + 1); };
+    function checkAnswer(elem:any){
          if(current<data.length-1){
                if( elem.value== data[current].answer){
                     setScore(prev=>prev+1)
@@ -20,14 +19,13 @@ export default function Quiz(){
                }
          }
          else{
-               redirect(`/result?score:${score+1}`);
+               redirect(`/result?score=${score+1}`);
          }
-          
 
       };
 
       useEffect(()=>{
-          document.querySelectorAll('input[type="radio"').forEach(i=>i.checked=false)
+          setTimeout(()=>document.querySelectorAll('input[type="radio"]').forEach((i)=>(i as HTMLInputElement).checked=false),300);
       },[current]);
      
   return (
@@ -35,7 +33,7 @@ export default function Quiz(){
       <header className="p-3 sticky top-0 bg-black z-10">
             <div className="flex justify-between items-center">
               <h1 className="text-5xl font-bold">Next JS Quiz</h1>
-              <p className="text-xl">Score: {score}</p>
+              {/* <p className="text-xl">Score: {score}</p> */}
             </div>
       </header>
       <main className="p-3">
